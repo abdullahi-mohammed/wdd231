@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f8f8fa;
+  color: #222;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+nav {
+  background: darkmagenta;
+  color: beige;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: beige;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.hero section {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  padding: 1.5rem;
+  flex: 1 1 300px;
+}
+
+.hero h2 {
+  text-align: center;
+  background-color: darkmagenta;
+  color: beige;
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+
+section > h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  background: darkmagenta;
+  color: beige;
+  text-align: center;
+}
+
+.filter-btns {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.filter-btn {
+  background: darkmagenta;
+  color: beige;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background: #a000a0;
+}
+
+#courses {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.course {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  padding: 1rem 1.5rem;
+}
+
+.course h3 {
+  color: darkmagenta;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.socials img {
+  height: 80px;
+  margin: 0 5px;
+}
+
+footer {
+  background: darkmagenta;
+  color: beige;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+footer img {
+  height: 30px;
+  margin: 0 5px;
+}

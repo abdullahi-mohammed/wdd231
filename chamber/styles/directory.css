@@ -1,0 +1,280 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background: #f8f8fa;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Header styles */
+header {
+  background: darkmagenta;
+  color: beige;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+header img {
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  background: #fff;
+}
+
+header h1 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: beige;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #ffd700;
+}
+
+nav button {
+  background: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 0.3rem;
+  cursor: pointer;
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+nav button img {
+  height: 24px;
+  width: 24px;
+}
+
+/* Main content */
+main {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+main > img {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  background: #eee;
+}
+
+h2 {
+  color: darkmagenta;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 2rem;
+  background: #fff;
+  border-radius: 8px;
+  padding: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+section:first-of-type {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  padding: 1.5rem;
+}
+
+section:first-of-type div {
+  flex: 1 1 200px;
+  text-align: center;
+}
+
+section:first-of-type h3 {
+  color: darkmagenta;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  background: #f8f8fa;
+  border-radius: 6px;
+  padding: 0.3rem;
+}
+
+/* View toggle styles */
+.view-toggle {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.toggle-btn {
+  background: darkmagenta;
+  color: beige;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background 0.2s, color 0.2s;
+}
+
+.toggle-btn.active,
+.toggle-btn:hover {
+  background: #a000a0;
+  color: #fff;
+}
+
+/* Member cards */
+.member-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.2s;
+}
+
+.member-card:hover {
+  box-shadow: 0 4px 16px rgba(160, 0, 160, 0.12);
+}
+
+.member-card h2 {
+  color: darkmagenta;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.member-card > p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.member-card img {
+  height: 80px;
+  width: 80px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  background: #f0f0f0;
+  border: 1px solid #eee;
+}
+
+.member-card div {
+  width: 100%;
+}
+
+.member-card p {
+  margin: 0.3rem 0;
+  font-size: 0.98rem;
+}
+
+.member-card span {
+  font-weight: 600;
+  color: darkmagenta;
+}
+
+.member-card a {
+  color: #222;
+  text-decoration: underline;
+  word-break: break-all;
+  transition: color 0.2s;
+}
+
+.member-card a:hover {
+  color: darkmagenta;
+}
+
+#members.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+#members.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Footer styles */
+footer {
+  background: darkmagenta;
+  color: beige;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  font-size: 1rem;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer img {
+  height: 30px;
+  margin: 0 5px;
+}
+
+footer div {
+  text-align: left;
+  margin: 0 1rem;
+}
+
+@media (max-width: 900px) {
+  section:first-of-type {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  footer {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  main {
+    padding: 0 0.5rem;
+  }
+  #members.grid {
+    grid-template-columns: 1fr;
+  }
+}

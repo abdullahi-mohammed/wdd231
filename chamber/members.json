@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Ilorin Tech Solutions",
+    "address": "12 Airport Road, Ilorin, Nigeria",
+    "phone": "+234 803 123 4567",
+    "website": "https://ilorintech.com",
+    "image": "ilorintech.png",
+    "membership": 3,
+    "description": "Leading provider of IT services and solutions for local businesses.",
+    "contact": "info@ilorintech.com"
+  },
+  {
+    "name": "Green Valley Farms",
+    "address": "45 Valley Lane, Ilorin, Nigeria",
+    "phone": "+234 805 234 5678",
+    "website": "https://greenvalleyfarms.com",
+    "image": "greenvalley.png",
+    "membership": 2,
+    "description": "Organic farm supplying fresh produce to the region.",
+    "contact": "sales@greenvalleyfarms.com"
+  },
+  {
+    "name": "Airport Plaza Hotel",
+    "address": "1 Plaza Avenue, Ilorin, Nigeria",
+    "phone": "+234 807 345 6789",
+    "website": "https://airportplazahotel.com",
+    "image": "airportplaza.png",
+    "membership": 1,
+    "description": "Comfortable hotel accommodation near the airport.",
+    "contact": "booking@airportplazahotel.com"
+  },
+  {
+    "name": "Royal Printworks",
+    "address": "88 Royal Street, Ilorin, Nigeria",
+    "phone": "+234 809 456 7890",
+    "website": "https://royalprintworks.com",
+    "image": "royalprintworks.png",
+    "membership": 2,
+    "description": "Printing and branding solutions for businesses.",
+    "contact": "support@royalprintworks.com"
+  },
+  {
+    "name": "Sunrise Medical Clinic",
+    "address": "23 Sunrise Crescent, Ilorin, Nigeria",
+    "phone": "+234 811 567 8901",
+    "website": "https://sunrisemedical.com",
+    "image": "sunriseclinic.png",
+    "membership": 1,
+    "description": "Quality healthcare and medical services.",
+    "contact": "info@sunrisemedical.com"
+  },
+  {
+    "name": "Kwara Logistics",
+    "address": "17 Logistics Drive, Ilorin, Nigeria",
+    "phone": "+234 813 678 9012",
+    "website": "https://kwaralogistics.com",
+    "image": "kwaralogistics.png",
+    "membership": 3,
+    "description": "Efficient transport and delivery services.",
+    "contact": "contact@kwaralogistics.com"
+  },
+  {
+    "name": "Elite Fashion House",
+    "address": "56 Elite Road, Ilorin, Nigeria",
+    "phone": "+234 815 789 0123",
+    "website": "https://elitefashion.com",
+    "image": "elitefashion.png",
+    "membership": 2,
+    "description": "Trendy fashion and accessories for all ages.",
+    "contact": "hello@elitefashion.com"
+  }
+]

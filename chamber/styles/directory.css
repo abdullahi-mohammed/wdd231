@@ -85,8 +85,8 @@ main {
 
 main > img {
   width: 100%;
-  max-height: 250px;
-  object-fit: cover;
+  max-height: 400px;
+  object-fit: fill;
   border-radius: 10px;
   margin-bottom: 1.5rem;
   background: #eee;

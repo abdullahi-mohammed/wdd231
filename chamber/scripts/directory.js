@@ -52,4 +52,23 @@ function renderMembers(members, view) {
     });
 }
 
+// Set current year and last modified in the footer
+document.addEventListener("DOMContentLoaded", () => {
+    const year = new Date().getFullYear();
+    // Find the element to insert the year (you can add an id if needed)
+    const footerDivs = document.querySelectorAll("footer div");
+    // Insert year in the third footer div (adjust if your structure changes)
+    if (footerDivs.length > 2) {
+        footerDivs[2].innerHTML = footerDivs[2].innerHTML.replace(
+            /(\d{4}) airport area chamber of commerce/,
+            `${year} airport area chamber of commerce`
+        );
+        // Set last modified date
+        const lastModifiedSpan = document.getElementById("lastModified");
+        if (lastModifiedSpan) {
+            lastModifiedSpan.textContent = document.lastModified;
+        }
+    }
+});
+
 loadMembers();

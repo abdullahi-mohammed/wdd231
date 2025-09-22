@@ -40,7 +40,7 @@ function renderMembers(members, view) {
             <h2>${member.name}</h2>
             <p>${member.description}</p>
             <div>
-                <img src="./images/${member.image}" alt="${member.name} logo" width="80">
+                <img src="${member.image}" alt="${member.name} logo" width="80">
                 <p><span>Email:</span> <a href="mailto:${member.contact}">${member.contact}</a></p>
                 <p><span>Phone:</span> <a href="tel:${member.phone}">${member.phone}</a></p>
                 <p><span>Address:</span> ${member.address}</p>

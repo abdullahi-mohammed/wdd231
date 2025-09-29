@@ -1,0 +1,64 @@
+.spotlights {
+  margin: 2rem 0;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(160,0,160,0.07);
+  padding: 1.5rem;
+}
+
+.spotlights h2 {
+  color: darkmagenta;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.spotlight-cards {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.spotlight-card {
+  background: #f8f8fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(160,0,160,0.09);
+  padding: 1rem;
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.spotlight-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  background: #fff;
+  border: 1px solid #eee;
+}
+
+.spotlight-card h3 {
+  color: darkmagenta;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.spotlight-card p {
+  font-size: 0.98rem;
+  margin: 0.2rem 0;
+  text-align: center;
+}
+
+.spotlight-card a {
+  color: #222;
+  text-decoration: underline;
+  word-break: break-all;
+}
+
+.spotlight-card a:hover {
+  color: darkmagenta;
+}

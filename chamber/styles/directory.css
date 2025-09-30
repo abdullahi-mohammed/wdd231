@@ -238,6 +238,10 @@ section:first-of-type h3 {
   gap: 1.5rem;
 }
 
+#members.list img {
+  display: none;
+}
+
 /* Footer styles */
 footer {
   background: darkmagenta;

@@ -78,7 +78,7 @@ nav button img {
 
 /* Main layout for large screens */
 @media (min-width: 900px) {
-  main {
+  main > div {
     display: flex;
     align-items: flex-start;
     gap: 2rem;

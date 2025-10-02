@@ -6,6 +6,14 @@
   padding: 1.5rem;
 }
 
+.cta {
+  padding: 8px 16px;
+  background: rgb(79, 103, 209);
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(160, 0, 160, 0.09);
+  transition: background 0.3s ease;
+}
+
 .spotlights h2 {
   color: darkmagenta;
   text-align: center;

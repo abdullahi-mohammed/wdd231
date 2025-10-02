@@ -53,20 +53,23 @@ function formatTime(unix, tzOffset) {
 }
 
 // Update 3-day forecast section
+
 function updateForecast(data) {
-    // Get forecast for next 3 days at 12:00
+    // Select the forecast div in your HTML
     const forecastDiv = document.querySelector('section > div:nth-child(3)');
     if (!forecastDiv) return;
 
-    // Group by date
+    // Group forecast by day, pick the forecast closest to 12:00 for each day
     const days = {};
     data.list.forEach(item => {
         const date = new Date(item.dt * 1000);
         const day = date.toLocaleDateString(undefined, { weekday: 'long' });
-        if (!days[day] && date.getHours() === 12) {
+        // Only pick one forecast per day, closest to 12:00
+        if (!days[day] || Math.abs(date.getHours() - 12) < Math.abs(days[day].hour - 12)) {
             days[day] = {
                 temp: Math.round(item.main.temp),
-                desc: item.weather[0].description
+                desc: item.weather[0].description,
+                hour: date.getHours()
             };
         }
     });
@@ -95,10 +98,15 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
+
+
+
 // Spotlight logic
 async function loadSpotlights() {
     try {
         const response = await fetch('./members.json');
+        console.log(response);
+
         if (!response.ok) throw new Error('Could not fetch members');
         const members = await response.json();
 
@@ -112,7 +120,7 @@ async function loadSpotlights() {
         // Render spotlights
         const spotlightDiv = document.createElement('section');
         spotlightDiv.className = 'spotlights';
-        spotlightDiv.innerHTML = `<h2>Member Spotlights</h2>
+        spotlightDiv.innerHTML = `<h2>Company Spotlights</h2>
             <div class="spotlight-cards">
                 ${selected.map(member => `
                     <div class="spotlight-card">

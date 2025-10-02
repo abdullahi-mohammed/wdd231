@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - Chamber of Commerce</title>
+    <meta name="description" content="Thank you for joining the airport area chamber of commerce.">
+    <meta name="author" content="abdullahi">
+    <meta property="og:title" content="chamber of commerce - airport area">
+    <meta property="og:description" content="Thank you for joining the chamber of commerce.">
+    <meta property="og:image" content="/airportarea.jpg">
+    <meta property="og:url" content="https://abdullahi-mohammed.github.io/wdd231/chamber/thankyou.html">
+
+    <link rel="icon" type="image/svg+xml" href="./images/logo.ico">
+    <link rel="shortcut icon" href="./images/logo.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/directory.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/join.css">
+    <style>
+        .thankyou-container {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(160, 0, 160, 0.07);
+            padding: 2rem 1.5rem;
+            max-width: 500px;
+            margin: 2rem auto;
+            text-align: center;
+        }
+
+        .thankyou-container h2 {
+            color: darkmagenta;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+
+        .thankyou-container p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .thankyou-details {
+            text-align: left;
+            margin: 0 auto;
+            max-width: 400px;
+            background: #f8f8fa;
+            border-radius: 6px;
+            padding: 1rem 1.5rem;
+            box-shadow: 0 1px 4px rgba(160, 0, 160, 0.05);
+        }
+
+        .thankyou-details dt {
+            font-weight: 600;
+            color: darkmagenta;
+            margin-top: 1rem;
+        }
+
+        .thankyou-details dd {
+            margin-left: 0;
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+        }
+
+        @media (max-width: 600px) {
+            .thankyou-container {
+                padding: 1rem 0.5rem;
+            }
+
+            .thankyou-details {
+                padding: 0.7rem 0.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="./images/airportarea.jpg" alt="airport area chamber of commerce">
+            <h1>airport area chamber of commerce</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./">Home</a></li>
+                <li><a href="./directory.html">Directory</a></li>
+                <li><a href="./join.html">Join</a></li>
+                <li><a href="">Discover</a></li>
+                <li class="cta"><a href="./join.html">Join Now</a></li>
+            </ul>
+            <button>
+                <img src="./images/airportarea.jpg" alt="light and dark toggle">
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <div class="thankyou-container">
+            <h2>Thank You!</h2>
+            <p>
+                We appreciate your interest in joining the Airport Area Chamber of Commerce.<br>
+                Your application has been received. Below is a summary of your submission:
+            </p>
+            <dl class="thankyou-details">
+                <dt>First Name</dt>
+                <dd id="firstName"></dd>
+                <dt>Last Name</dt>
+                <dd id="lastName"></dd>
+                <dt>Email Address</dt>
+                <dd id="email"></dd>
+                <dt>Mobile Phone Number</dt>
+                <dd id="phone"></dd>
+                <dt>Business/Organization Name</dt>
+                <dd id="organization"></dd>
+                <dt>Submission Date &amp; Time</dt>
+                <dd id="timestamp"></dd>
+            </dl>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <h3>
+                airport area chamber of commerce
+            </h3>
+            <p>Airport Road Ilrorin Kwara State. <br>
+                airport@info.com
+                +2348025275911
+            </p>
+        </div>
+
+        <div>
+            <img src="./images/linkedin.webp" alt="youtube">
+            <img src="./images/x.webp" alt="twitter">
+            <img src="./images/linkedin.webp" alt="linkedin">
+        </div>
+
+        <div>
+            <p>WDD231 class project <br>Abdullahi Mohammed <br>2025 airport area chamber of commerce <br>
+            <p>Last Modification <span id='lastModified'>Date Time</span></p>
+            </p>
+        </div>
+    </footer>
+    <script>
+        // Display submitted form data from URL parameters
+        function getParam(name) {
+            const url = new URL(window.location.href);
+            return url.searchParams.get(name) || '';
+        }
+        document.getElementById('firstName').textContent = getParam('firstName');
+        document.getElementById('lastName').textContent = getParam('lastName');
+        document.getElementById('email').textContent = getParam('email');
+        document.getElementById('phone').textContent = getParam('phone');
+        document.getElementById('organization').textContent = getParam('organization');
+        document.getElementById('timestamp').textContent = getParam('timestamp');
+
+        // Set last modified date in footer
+        document.getElementById("lastModified").textContent = document.lastModified;
+    </script>
+</body>
+
+</html>
